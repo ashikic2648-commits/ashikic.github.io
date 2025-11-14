@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ashik I.C. — Personal Portfolio</title>
+  <meta name="description" content="Portfolio of Ashik I.C. — BCA AI & DS student. Projects, skills, education and contact." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;--glass: rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:#e6eef6;background:linear-gradient(180deg,#061124 0%, #071226 60%);}
+    .container{max-width:1100px;margin:36px auto;padding:28px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:120px;height:120px;border-radius:16px;overflow:hidden;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#052;box-shadow:0 6px 20px rgba(3,7,18,0.6)}
+    .title h1{margin:0;font-size:28px}
+    .title p{margin:6px 0 0;color:var(--muted)}
+    nav{margin-top:18px;display:flex;gap:10px}
+    .btn{background:var(--glass);border:1px solid rgba(255,255,255,0.04);padding:8px 12px;border-radius:10px;color:#d6e7f5;text-decoration:none;font-size:14px}
+
+    main{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:22px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);}
+
+    .about p{color:var(--muted);line-height:1.6}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .skill{padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.02);font-size:13px}
+
+    .projects-grid{display:grid;grid-template-columns:repeat(1,1fr);gap:12px;margin-top:12px}
+    .project{display:flex;gap:12px;align-items:center}
+    .project-thumb{width:96px;height:64px;border-radius:8px;background:linear-gradient(135deg,#1e293b,#0f1724);display:flex;align-items:center;justify-content:center;font-weight:600}
+    .project h4{margin:0 0 6px 0}
+    .project p{margin:0;color:var(--muted);font-size:13px}
+
+    aside .card + .card{margin-top:16px}
+    .contact-form label{display:block;font-size:13px;margin-top:10px}
+    .contact-form input,.contact-form textarea{width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#eaf6ff}
+    .contact-form button{margin-top:10px;padding:10px 14px;border-radius:8px;border:none;background:var(--accent);color:#052;font-weight:700}
+
+    footer{margin-top:28px;color:var(--muted);text-align:center;font-size:13px}
+    @media (max-width:900px){main{grid-template-columns:1fr}aside{order:2}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">AI</div>
+      <div class="title">
+        <h1>Ashik I.C. — Portfolio</h1>
+        <p>BCA (AI-DS) Student | Aspiring Data Scientist &amp; Web Developer</p>
+        <nav>
+          <a class="btn" href="#about">About</a>
+          <a class="btn" href="#projects">Projects</a>
+          <a class="btn" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div id="about" class="card about">
+          <h2>About Me</h2>
+          <p>Hi — I'm <strong>Ashik I.C.</strong>, a BCA student specializing in Artificial Intelligence &amp; Data Science. I build data-driven projects, analyze datasets, and create web tools to visualize and deliver insights. I'm passionate about machine learning, Python, and full-stack web development. Currently looking for internships and project collaborations.</p>
+
+          <h3 style="margin-top:14px">Skills</h3>
+          <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">Pandas</div>
+            <div class="skill">NumPy</div>
+            <div class="skill">scikit-learn</div>
+            <div class="skill">Machine Learning</div>
+            <div class="skill">SQL</div>
+            <div class="skill">HTML & CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Git</div>
+            <div class="skill">Data Visualization</div>
+          </div>
+
+          <h3 style="margin-top:14px">Selected Projects</h3>
+          <div id="projects" class="projects-grid">
+            <div class="project card">
+              <div class="project-thumb">P1</div>
+              <div>
+                <h4>Player Performance Dashboard</h4>
+                <p>Interactive dashboard built using Python and Dash to analyze player stats and visualize trends.</p>
+                <small style="color:var(--muted)">Tech: Python, Dash, Pandas</small>
+              </div>
+            </div>
+
+            <div class="project card">
+              <div class="project-thumb">DS</div>
+              <div>
+                <h4>Fantasy Sports Analyzer</h4>
+                <p>Model to recommend optimal fantasy lineups using historical data and heuristic optimization.</p>
+                <small style="color:var(--muted)">Tech: Python, scikit-learn, NumPy</small>
+              </div>
+            </div>
+
+            <div class="project card">
+              <div class="project-thumb">WD</div>
+              <div>
+                <h4>Personal Website Template</h4>
+                <p>Responsive single-page portfolio built with HTML &amp; CSS. A template you can reuse and customize.</p>
+                <small style="color:var(--muted)">Tech: HTML, CSS</small>
+              </div>
+            </div>
+          </div>
+
+          <h3 style="margin-top:14px">Education</h3>
+          <p style="margin:6px 0 0;color:var(--muted)"><strong>BCA — AI &amp; Data Science</strong><br/>Institution: Dr. MGR College of Education and Research Institute, Chennai — Expected Graduation: 2026</p>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Summary</h3>
+          <p style="color:var(--muted)">I create practical projects that combine programming and data analysis. I enjoy end-to-end work — from cleaning and modeling data to building visual dashboards that stakeholders can use.</p>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card">
+          <h3>Contact</h3>
+          <p style="color:var(--muted)">Want to collaborate or hire me for internships? Send a message.</p>
+          <form id="contact" class="contact-form" onsubmit="event.preventDefault(); window.location='mailto:youremail@example.com?subject=Portfolio%20Contact&body='+encodeURIComponent(document.getElementById('message').value)">
+            <label for="name">Name</label>
+            <input id="name" placeholder="Your name" required />
+            <label for="email">Email</label>
+            <input id="email" placeholder="your@mail.com" required />
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Hi Ashik, I'm interested in..." rows="4" required></textarea>
+            <button type="submit">Send Email</button>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3>Certifications</h3>
+          <p style="color:var(--muted);margin:6px 0">
+            • IBM – Introduction to Python (2024)<br/>
+            • IBM – Machine Learning using Watson Studio (2024)<br/>
+            • TN Advanced Technical Training Institute – Java Programming using VS Code (2024)<br/>
+            • Here and Now AI – RAG in Action (2024)
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Quick Links</h3>
+          <p style="color:var(--muted);margin:6px 0">GitHub: <a href="#" style="color:var(--accent);text-decoration:none">github.com/yourusername</a><br/>LinkedIn: <a href="#" style="color:var(--accent);text-decoration:none">linkedin.com/in/yourname</a></p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Built by Ashik I.C. • <span id="year"></span></p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>
